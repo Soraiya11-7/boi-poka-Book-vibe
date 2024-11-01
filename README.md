@@ -2,7 +2,8 @@
 
 ## **install**
 
-- **React Router**
+- **React Router (url: https://reactrouter.com/en/main/start/tutorial)**
+
 in _cmd(terminal)_
 
 ```
@@ -15,26 +16,30 @@ ii)npm install react-router-dom
 iv)npm install localforage match-sorter sort-by 
 ```
 
-- **Tailwind** :
-Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files [i,ii].  Add the paths to all of your template files in your tailwind.config.js file[iii]. Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file[iv]
+- **Tailwind (url: https://tailwindcss.com/docs/guides/vite)** 
+
 ```
+Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files [i,ii].
 i) npm install -D tailwindcss postcss autoprefixer
 
 ii) npx tailwindcss init -p
 
-iii)in tailwind.config.js file 
+iii) Add the paths to all of your template files in your tailwind.config.js file .
+
  content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
 iv)in src/index.css file
+Add the @tailwind directives for each of Tailwind’s layers to ./src/index.css file
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
 ```
 
-- **DaisyUi**
+- **DaisyUi (url: https://daisyui.com/docs/install/)**
 ```
 i)Install daisyUI as a Node package:
  npm i -D daisyui@latest
@@ -46,7 +51,7 @@ in tailwind.config.js file
     require('daisyui'),
   ],
 
-iv)in eslint.config.js file add _node:true_
+iv)in eslint.config.js file add  "node:true"
 languageOptions: {
       ecmaVersion: 2020,
       node: true,  //this line---->>>>
@@ -60,7 +65,7 @@ languageOptions: {
 ```
 
 - **Again React Router**
-in _in main.jsx file_
+in _main.jsx file_
 ```
 
 i) import {
